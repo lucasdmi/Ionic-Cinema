@@ -1,0 +1,28 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>FilmesEdit</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+  <ion-list>
+
+    <ion-item>
+      <ion-label stacked>Nome</ion-label>
+      <ion-input type="text" name="nome" [(ngModel)]="filme.nome"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label stacked>Data</ion-label>
+      <ion-input type="text" name="data" [(ngModel)]="filme.data"></ion-input>
+    </ion-item>
+
+  </ion-list>
+
+  <button ion-button block (click)="save()">Salvar</button>
+  
+</ion-content>

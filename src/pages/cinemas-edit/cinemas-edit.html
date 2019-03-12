@@ -1,0 +1,34 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>CinemaEdit</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+  <ion-list>
+
+    <ion-item>
+      <ion-label stacked>Nome</ion-label>
+      <ion-input type="text" name="nome" [(ngModel)]="cinema.nome"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label stacked>Cnpj</ion-label>
+      <ion-input type="text" name="cnpj" [(ngModel)]="cinema.cnpj"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label stacked>Endereco</ion-label>
+      <ion-input type="text" name="endereco" [(ngModel)]="cinema.endereco"></ion-input>
+    </ion-item>
+    
+
+
+  </ion-list>
+
+  <button ion-button block (click)="save()">Salvar</button>
+  
+</ion-content>
